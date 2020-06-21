@@ -2,13 +2,14 @@ package com.sda.strings;
 
 public class StringOperationApp {
     public static void main(String[] args) {
+
         StringOperation stringOperation = new TextUpperCase();
-        String before = "dupa";
+        String before = "lupa";
         String after = stringOperation.modify(before);
         System.out.println(before + " " + after);
 
         stringOperation = new TextDuplicate();
-        System.out.println(stringOperation.modify("dupa"));
+        System.out.println(stringOperation.modify("lupa"));
 
         StringOperation costam = new TextUpperCase();
 

@@ -1,6 +1,6 @@
 package com.sda.geometry;
 
-public class FlatShape {
+public abstract class FlatShape {
     double width;
     double height;
 
@@ -9,7 +9,8 @@ public class FlatShape {
         this.height = height;
     }
 
-    void printDimensions {
+    void printDimensions (double width, double height){
         System.out.println(String.format("FlatShape [x, y] = [%f, %f]", width, height));
     }
+    abstract double getArea(double x, double y);
 }
